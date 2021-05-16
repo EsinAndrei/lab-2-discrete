@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="script.js"></script>
+    <title>Lab 3 MLMD</title>
+    
+</head>
+	<body> 
+	<h1>Лабораторная работа №3</h1>
+	
+	<h3>Определить является ли отношение функцией<br>
+	Формат ввода:</h3>
+	Элементы в множествах вводятся через пробел<br>
+	Элементы в отношении вводятся через запятую, между парами элементов ставится пробел<br> 
+	<h3>Отношение задается из первого множества во второе множество</h3>
+
+    <form onsubmit="test();return false;">
+        Первое множество
+		<div>
+        <input type="text" id="a1" pattern="\d\s){1,}">
+		</div>		
+        Второе множество
+		<div>
+        <input type="text" id="a2"  pattern="\d\s){1,}">
+		</div>
+		Отношение
+		<div>
+        <input type="text" id="a3"  pattern="\d+(,\d)\s){1,}">
+		</div>
+		<div>
+        <input type="submit" value="Проверка">
+		</div>		
+    </form>
+	<div id='t1'>			
+		</div>
+</body>
+</html>
